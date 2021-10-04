@@ -1,0 +1,21 @@
+.faq__tittle {
+    color: #424b54;
+}
+.faq__container {
+    details {
+        summary {
+            &::marker {
+                display: none;
+                content: "";
+            }
+        }
+    }
+    details[open]{
+        summary {
+            &::marker {
+                display: none;
+                content: "";
+            }
+        } 
+    }
+}

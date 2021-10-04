@@ -1,0 +1,35 @@
+footer {
+    background-color: #727D89;
+    color: white;
+}
+
+.footer__container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__rigth {
+    text-align: center;
+}
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.footer__item{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width: 690px){
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__item{
+        margin-block: 16px;
+        align-items: center;
+    }
+}
