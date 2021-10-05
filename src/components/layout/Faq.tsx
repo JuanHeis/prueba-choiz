@@ -1,14 +1,17 @@
 import React from "react";
 
-function Faq() {
+function Faq(prop: { value: any }) {
+    console.log(prop.value)
     return (<React.Fragment>
         <div className="faq__container">
+
             <details>
                 <summary>
-                    <h4 className="faq__question">Pregunta?</h4>
+                    <h4 className="faq__question">{prop.value.title}</h4>
                 </summary>
                 <p className="faq__body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias eius exercitationem illum commodi consequuntur quia earum dolorum esse laboriosam inventore animi voluptatum assumenda, voluptatibus eveniet repudiandae et accusantium repellat.
+
+                    {prop.value.description}
                 </p>
             </details>
             <hr />

@@ -1,21 +1,24 @@
-import React from "react"
+import React, { useContext } from "react"
 import Faq from "./Faq"
-
+import Context from "../../context/context"
 function FaqSection() {
 
-    return (<React.Fragment>
+    const context: any = useContext(Context)
+
+    return (
         <section id="frequentlyAskedQuestion" className="faq">
             <div className="wrapperSection">
                 <h2 className="faq__tittle">
                     Preguntas frecuentes
                 </h2>
-                <Faq></Faq>
-                <Faq></Faq>
-                <Faq></Faq>
-                <Faq></Faq>
+                {
+                    context.value.faq.map((afaq: any) => {
+                        return (<Faq value={afaq} />)
+                    })
+                }
             </div>
         </section>
-    </React.Fragment>)
+    )
 }
 
 export default FaqSection
