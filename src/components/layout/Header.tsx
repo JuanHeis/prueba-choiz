@@ -14,7 +14,7 @@ function Header() {
             <li className="navbar__item"> <a href="">Quiénes somos</a> </li>
             <li className="navbar__item"> <a href="">Preguntas frecuentes</a></li>
             <li className="navbar__item"><a href="">Contacto</a></li>
-            <li><button className="button--secondary">¿Tenés dudas?</button></li>
+            <li className="navbar__item"><button className="button--secondary">¿Tenés dudas?</button></li>
           </ul>
         </div>
       </div>

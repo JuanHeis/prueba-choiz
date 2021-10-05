@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import Faq from "./Faq"
 import Context from "../../context/context"
+import { FaqItem } from "../../model/faqItem"
 function FaqSection() {
 
     const context: any = useContext(Context)
@@ -12,8 +13,8 @@ function FaqSection() {
                     Preguntas frecuentes
                 </h2>
                 {
-                    context.value.faq.map((afaq: any) => {
-                        return (<Faq value={afaq} />)
+                    context.value.faq.map((aFaq: FaqItem) => {
+                        return (<Faq item={aFaq} />)
                     })
                 }
             </div>

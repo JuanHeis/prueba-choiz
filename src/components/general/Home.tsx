@@ -4,16 +4,10 @@ import Footer from "../layout/Footer"
 import Header from "../layout/Header"
 import Hero from "../layout/Hero"
 import Context from '../../context/context';
-interface FaqItem {
-  id: string,
-  title: string,
-  description: string,
-  enabled: boolean
-}
+import { FaqList } from "../../model/faqList"
+import { MedicineList } from "../../model/medicineList"
 
-interface FaqList {
-  data: Array<FaqItem>;
-}
+
 
 function Home() {
   const context: any = useContext(Context)
@@ -22,10 +16,17 @@ function Home() {
   useEffect(() => {
     fetch("https://run.mocky.io/v3/6f0fb5ae-1758-4537-84c7-f6669edd614f").then((response) => {
       return response.json()
-
     }).then((faqlist: FaqList) => {
       console.log(context)
       context.setValue({ ...context.value, faq: faqlist.data })
+    })
+
+    fetch("https://run.mocky.io/v3/1f00949f-adc2-4484-ad6d-4f565e82ad30").then((response) => {
+      return response.json()
+    }).then((medicineList: MedicineList) => {
+      console.log(context)
+      context.setValue({ medicines: medicineList.data, ...context.value })
+      console.log("Medicnes: ", medicineList)
     })
 
   }, [])
