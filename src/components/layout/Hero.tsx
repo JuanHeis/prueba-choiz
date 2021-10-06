@@ -4,7 +4,7 @@ import Header from "./Header";
 function Hero() {
     return (
         <React.Fragment>
-            
+
             <div className="hero">
                 <div className="hero__elipse">
 
@@ -19,18 +19,19 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="hero__bottom">
+            <div  className="hero__bottom">
+                
                 <div className="wrapper">
                     <div className="hero__bottom__container">
 
-                    <p>
-                        Las mejores expertas en ginecología del país están a tu disposición para conversar sin que tengas que salir de tu casa.
-                    </p>
+                        <p>
+                            Las mejores expertas en ginecología del país están a tu disposición para conversar sin que tengas que salir de tu casa.
+                        </p>
 
-                    <button>
+                        <button>
 
-                        Agendar una consulta
-                    </button>
+                            Agendar una consulta
+                        </button>
                     </div>
                 </div>
             </div>

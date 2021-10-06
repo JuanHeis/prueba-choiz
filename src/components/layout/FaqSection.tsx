@@ -7,14 +7,14 @@ function FaqSection() {
     const context: any = useContext(Context)
 
     return (
-        <section id="frequentlyAskedQuestion" className="faq">
+        <section id="faq" className="faq">
             <div className="wrapperSection">
                 <h2 className="faq__tittle">
                     Preguntas frecuentes
                 </h2>
                 {
                     context.value.faq.map((aFaq: FaqItem) => {
-                        return (<Faq item={aFaq} />)
+                        return (<Faq key={aFaq.id} item={aFaq} />)
                     })
                 }
             </div>

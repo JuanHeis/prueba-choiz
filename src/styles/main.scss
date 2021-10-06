@@ -6,7 +6,11 @@
 $grayChoiz: #424b54;
 
 html {
+  scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+}
+#consult{
+  margin-block-start: -150px;
 }
 .test {
   background-color: aquamarine;
@@ -27,4 +31,10 @@ html {
 }
 button {
   cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+
+  .wrapper{
+    width: auto;
+  }
 }

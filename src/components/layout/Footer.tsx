@@ -8,7 +8,7 @@ import instagram from "../../resources/icon/instagram.svg"
 import whatsapp from "../../resources/icon/whatsapp.svg"
 function Footer() {
     return (<React.Fragment>
-        <footer>
+        <footer id="contact">
             <div className="wrapper">
                 <div className="footer__container">
                     <div className="footer__item footer__left">
