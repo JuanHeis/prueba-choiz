@@ -1,9 +1,9 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import Faq from "./Faq"
 import Context from "../../context/context"
 import { FaqItem } from "../../model/faqItem"
 function FaqSection() {
-
+    const [active, setActive] = useState(1)
     const context: any = useContext(Context)
 
     return (
@@ -14,7 +14,7 @@ function FaqSection() {
                 </h2>
                 {
                     context.value.faq.map((aFaq: FaqItem) => {
-                        return (<Faq key={aFaq.id} item={aFaq} />)
+                        return (<Faq active={active} setActive={setActive} key={aFaq.id} item={aFaq} />)
                     })
                 }
             </div>

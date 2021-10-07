@@ -1,6 +1,6 @@
 .header {
   background-color: #00000057;
-        backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1;
   position: relative;
   position: fixed;
@@ -40,7 +40,7 @@
       border: 4px solid #fff;
     }
   }
-  .navbar__mobile{
+  .navbar__mobile {
     display: none;
   }
   .navbar__item {
@@ -74,52 +74,48 @@
     ul {
       button.button--secondary {
         margin-inline-start: 0px;
-        
       }
     }
     &__container {
       padding-inline: 16px;
       justify-content: flex-start;
     }
-    .navbar__item 
-    {
-      a{
+    .navbar__item {
+      a {
         padding-inline: 8px;
       }
     }
   }
 }
 @media screen and (max-width: 960px) {
-.header{
-  background-color: #00000057;
-        backdrop-filter: blur(10px);
-  &__container{
-    justify-content: space-between;
-  }
-  .navbar__mobile{
-    vertical-align: middle;
-    display: inline-block;
-    + ul{
-      display: none;
+  .header {
+    background-color: #00000057;
+    backdrop-filter: blur(10px);
+    &__container {
+      justify-content: space-between;
     }
-    &:hover{
-      + ul{
-        background-color: #00000057;
-        backdrop-filter: blur(10px);
-        padding: 16px;
-        justify-content: flex-end;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        inset-block-start: 72px;
-        inset-inline-end: 0px;
-        .navbar__item{
-          text-align: right;
+    .navbar__mobile {
+      vertical-align: middle;
+      display: inline-block;
+      + ul {
+        display: none;
+      }
+      &:hover {
+        + ul {
+          background-color: #00000057;
+          backdrop-filter: blur(10px);
+          padding: 16px;
+          justify-content: flex-end;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          inset-block-start: 72px;
+          inset-inline-end: 0px;
+          .navbar__item {
+            text-align: right;
+          }
         }
       }
     }
   }
-
-  
-}
 }

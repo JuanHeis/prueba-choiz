@@ -1,21 +1,44 @@
 .faq__tittle {
-    color: #424b54;
+  color: #424b54;
 }
-.faq__container {
-    details {
-        summary {
-            &::marker {
-                display: none;
-                content: "";
-            }
+
+.faq {
+  details {
+    transition: ease-in-out 0.1s;
+    summary.faq__question {
+      cursor: pointer;
+      color: #424b54;
+      font-size: 1.25rem;
+      & .faq__question__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & div img {
+          transition: ease-in-out 0.25s;
         }
+      }
+      &::marker {
+        display: none;
+        content: "";
+      }
     }
-    details[open]{
-        summary {
-            &::marker {
-                display: none;
-                content: "";
-            }
-        } 
+  }
+  details[open] {
+    transition: ease-in-out 0.1s;
+    summary.faq__question {
+      & .faq__question__container {
+        & div img {
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+        }
+      }
+      &::marker {
+        display: none;
+        content: "";
+      }
     }
+  }
 }
