@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+  border-spacing: 0px;
+  th {
+    color: #424b54;
+    font-size: 0.875rem;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 16px;
+    border-top: 1px solid #0000003a;
+    text-align: start;
+  }
+  td {
+    color: #7c7c7c;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 16px;
+    border-bottom: 1px solid #0000003a;
+    background-color: white;
+  }
+}
+#medicine {
+  padding-block-start: 50px;
+  padding-block-end: 150px;
+  background-color: #f8f8f8;
+  h3 {
+    color: #424b54;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 16px;
+  }
+}
