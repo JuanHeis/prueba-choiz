@@ -43,3 +43,16 @@
     }
   }
 }
+@media screen and (max-width: 720px){
+  .faq {
+
+    details{
+      summary.faq__question {
+
+        padding-inline: 16px;
+
+      }
+  
+    }
+  }
+}
